@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My porfolio</title>
+        <link rel="stylesheet" href ="style.css">
+        <link rel="stylesheet" href ="mediaqueries.css">
+
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Dominik Witek</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <!-- <li><a href="#projects">Projects</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Dominik Witek</div>
+            <div class = "hamburger-menu">
+                <div class = "hamburger-icon" onclick="toggleMenu()">
+                    <span></span>       
+                    <span></span>       
+                    <span></span>       
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience"onclick="toggleMenu()">Experience</a></li>
+                    <!-- <li><a href="#projects"onclick="toggleMenu()">Projects</a></li> -->
+                    <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+                </div> 
+            </div>
+        </nav>
+        <section id="profile">
+            <div class ="section__pic-container">
+                <img id = "portrait" src="./assets/cropped_portrait2.png" alt="profile picture"/> 
+            </div>
+            <div class = "section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class ="title">Dominik Witek</h1>
+                <p class = "section__text__p2">Configuration Manager</p>
+                <div class="btn_containter">
+                    <button class="btn btn-color-2" 
+                    onclick = "window.open('./assets/DominikWitek_CV.pdf')">Download CV
+                </button>
+                <button class="btn btn-color-1" 
+                    onclick = "location.href='./#contact'">Contact Info
+                </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt = "My linkedin profile"
+                    class = "icon" onclick = "location.href='https://www.linkedin.com/in/dominik-witek-1a495b206/'">
+                    <img src="./assets/github.png" alt = "My Github profile"
+                    class = "icon" onclick = "location.href='https://github.com/Dominik171'">
+                </div>
+            </div> 
+        </section>
+        <section id="about">
+            <!-- <p class="section__text__p1">Get To Know More</p> -->
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img 
+                        src="./assets/mountain guyblue.png" 
+                        alt="Profile picture" 
+                        class="about-pic"
+                    />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img 
+                                src ='./assets/experience.png'
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <h3>Experience</h3>
+                            <p>1.5 years<br>Configuration Management<br>1.5 years<br>Purchasing Department assistant</p>
+                        </div>
+                        <div class="details-container">
+                            <img 
+                                src ='./assets/education.png'
+                                alt="Education icon"
+                                class="icon"
+                            />
+                            <h3>Education</h3>
+                            <p>B.Sc. Bachelors Degree<br>M.Sc. Masters Degree</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                          I am a Configuration Manager in an automotive company, responsible for ensuring that all relevant documentation is available, updated and baselined. I collaborate with various teams to achieve this. Additionally, I work on automating templates used company-wide, using Python and VBA.
+                          I am now seeking new career opportunities in the field of data. My interest in this area began in college, where I enjoyed fetching, cleaning, and analyzing data for my bachelor's and master's degrees. Working with data science tools like Python, Excel, and SQL has solidified my interest for this field, and I am eager to pursue a career path in data analysis or a related discipline.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">This is my</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container">
+                  <h2 class="experience-sub-title">Configuration Management</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Excel</h3>
+                        <p>Experienced</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Python</h3>
+                        <p>Pre-intermediate</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>VBA</h3>
+                        <p>Intermediate</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Jira, Polarion, Confluence</h3>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="details-container">
+                  <h2 class="experience-sub-title">Self-taught</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>SQL</h3>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Power BI</h3>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>HTML, CSS</h3>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./assets/arrow.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#contact'"
+            />
+          </section>
+          <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                <img
+                  src="./assets/email.png"
+                  alt="Email icon"
+                  class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:dominikmariuszwitek@gmail.com">dominikmariuszwitek@gmail.com</a></p>
+              </div>
+              <div class="contact-info-container">
+                <img
+                  src="./assets/linkedin.png"
+                  alt="LinkedIn icon"
+                  class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/dominik-witek-1a495b206/">LinkedIn</a></p>
+              </div>
+              <div class="contact-info-container">
+                <img
+                  src="./assets/phone.png"
+                  alt="Phone icon"
+                  class="icon contact-icon phone-icon"
+                />
+                <p><a>+48 799 076 903</a></p>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <nav>
+              <div class="nav-links-container">
+                <ul class="nav-links">
+                  <li><a href="#about">About me</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <!-- <li><a href="#projects">Projects</a></li> -->
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+            <p>Copyright &#169; 2024 Dominik Witek. All Rights Reserved.</p>
+          </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
